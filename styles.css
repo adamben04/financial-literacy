@@ -1,0 +1,62 @@
+/* Links styling */
+a:link {
+    text-decoration: none;
+    color: #846851;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #846851;
+}
+
+a:hover {
+    color: black;
+}
+
+#home {
+    font-family: Sacramento, normal;
+    font-size: 5em;
+    font-weight: bold;
+    
+}
+
+.nav-links {
+    font-family: Noto Sans JP;
+}
+
+a.nav-links {
+    padding: 0px 10px;
+}
+
+
+/* Hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    font-family: Noto Sans JP;
+    color:#846851;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+#button {
+    background-color: transparent;
+    font-family: Noto Sans JP;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:#846851;
+    padding: 15px 32px;
+    border-color: #846851;
+    text-align: center;
+}
+
+/* Background image*/
+html {
+    background: url(./images/budgeting.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
