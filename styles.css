@@ -1,0 +1,103 @@
+/* Background image*/
+html {
+    background: url(./images/budgeting-80-opacity.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main>h1 {
+    width: 100%;
+}
+/* Links styling */
+a:link {
+    text-decoration: none;
+    color: #846851;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #846851;
+}
+
+a:hover {
+    color: #644f3e;
+    font-weight: bold;
+}
+
+#home {
+    font-family: Sacramento, normal;
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+ul li {
+    display: inline;
+    padding: 20px;
+    font-family: Noto Sans JP;
+    font-size: 1.25em;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    justify-self: flex-end;
+}
+
+/* Hero section */
+main {
+    position: relative;
+    text-align: center;
+    font-family: Noto Sans JP;
+    color: #745c47;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+button {
+    background-color: transparent;
+    font-family: Noto Sans JP;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #846851;
+    padding: 15px 32px;
+    border: #846851 solid 3.5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #846851;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    font-family: Noto Sans JP;
+}
+
+footer>p {
+    text-align: center;
+}
