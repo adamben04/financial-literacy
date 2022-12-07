@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Page</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <link rel="calculator.js" href="./Calculator.js">
+
+    
+</head>
+
+<body>
+    <div>
+        <nav></nav>
+    </div> 
+
+    <header class="title">
+        <h2 id="calc-title">Budgeting Calculator</h2>
+    </header>
+
+    <main class="main-content">
+        <div class="output">
+            <div class="intro-content"><span>Income</span>
+                <p id="income-earned"></p>
+            </div>
+            <div class="intro-content"><span>Expanses</span>
+                <p id="spent-money"></p>
+            </div>
+            <div class="intro-content"><span>Under Budget</span>
+                <p id="debt"></p>
+            </div>
+        </div>
+
+        <div>
+            <h3 id="heading-title">Monthly Expanses</h2>
+        </div>
+        <!--Obtaining the input for calcultion-->
+
+        <form class="budget-input" id="calculator">
+            <div>
+            <label for="pay-check">Income :</label>
+            <input type="number" id="pay-check" class="amount" required>
+            </div>
+            <div>
+            <label for="house">Housing :</label>
+            <input type="number" id="house" class="amount" min="0" required>
+            </div>
+            <div>
+            <label for="utility">Bills/Utilities :</label>
+            <input type="number" id="utility" class="amount" min="0" required>
+            </div>
+            <div>
+            <label for="food-expanses">Food/Groceries :</label>
+            <input type="number" id="food-expanses" class="amount" min="0" required>
+            </div>
+            <div>
+            <label for="expanses-shopping">Shopping :</label>
+            <input type="number" id="expanses-shopping" class="amount" min="0" required>
+            </div>
+            <div>
+            <label for="expanses-transport">Transportation :</label>
+            <input type="number" id="expanses-transport" class="amount" min="0" required>
+            </div>
+            <div>
+            <label for="expanses-entertainment">Entertainment :</label>
+            <input type="number" id="expanses-entertainment" class="amount" min="0" required>
+            </div>
+            <div id="trigger-btn">
+            <button type="button" class="btn" onclick="getIncome(event);">Calculate</button>
+            </div>
+        </form>
+   
+    </main>
+
+    <script>
+        function getIncome(e){
+        e.preventDefault();
+        var income = +document.querySelector('#pay-check').value;
+        
+        document.querySelector('#income-earned').innerHTML = income;
+
+            let housing = +document.querySelector('#house').value;
+            let utility = +document.querySelector('#utility').value;
+            let food = +document.querySelector('#food-expanses').value;
+            let shopping = +document.querySelector('#expanses-shopping').value;
+            let commute = +document.querySelector('#expanses-transport').value;
+            let entertainment = +document.querySelector('#expanses-entertainment').value;
+
+            var sumOfExpanses = housing + utility + food + shopping + commute + entertainment;
+            document.querySelector('#spent-money').innerHTML = sumOfExpanses;
+        
+            
+            var underBudget = income - sumOfExpanses;
+            if (sumOfExpanses > income) {
+                document.querySelector('#debt').innerHTML = Math.abs(underBudget);
+            } else {
+                document.querySelector('#debt').innerHTML = 0;
+            }
+            
+        }
+    </script>
+</body>
+</html>
