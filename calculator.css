@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+
+body{
+    background: url(./Images/calcultorBackground.png);
+    font-size: large;
+    font-weight: 400;
+}
+
+
+form input.amount {
+    margin-left: 20px;
+}
+
+form div {
+    margin-block: 20px;
+}
+
+form div input {
+    padding-block: 5px;
+}
+
+form#calculator {
+    padding-left: 25%;
+};
+.title{
+    text-align: left;
+    padding-left: 10%;
+    font-size: large;
+    font-weight: 200;
+};
+
+.amount{
+    width: 200px;
+    
+}
+    
+ .output{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 10px;
+    margin-left: 35px;
+    margin: 25px;
+    padding-inline: 25px;
+}
+     
+.intro-content{
+    display: table-cell;
+    
+}
+
+/*Form alignment*/
+input#expanses-entertainment {
+    margin-left: 13px;
+}
+
+input#expanses-transport {
+    margin-left: 10px;
+}
+
+input#expanses-shopping {
+    margin-left: 48px;
+}
+
+input#food-expanses {
+    margin-left: 5px;
+}
+
+input#utility {
+    margin-left: 21px;
+}
+
+input#house {
+    margin-left: 57px;
+}
+
+input#pay-check {
+    margin-left: 65px;
+}
+
+/*form/button position*/
+
+form#calculator {
+    position: absolute;
+    top: 220px;
+    left: 40px;
+}
+
+button.btn {
+    position: relative;
+    left: 500px;
+    bottom: 250px;
+    transform: translate(-50px, 10px);
+}
+
+h3#heading-title {
+    position: absolute;
+    left: 35%;
+    font-style: initial;
+    top: 150px;
+    transform:translate(20px, 0px);
+}
