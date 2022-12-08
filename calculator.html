@@ -6,39 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Page</title>
     <link rel="stylesheet" href="./calculator.css">
-    <link rel="calculator.js" href="./Calculator.js">
-    
     
 </head>
 
-<body>
-    <div>
-        <nav></nav>
-    </div> 
+<body id="calc">
+    <header class="top-nav" style="clear: both">
+        <!-- Home -->
+        <div id="home" style="float: left">
+            <a href="index.html">acw project</a>
+        </div>
 
-    <header class="title">
-        <h2 id="calc-title">Budgeting Calculator</h2>
+        <!-- Other links -->
+        <div class="nav-links" style="float: right">
+            <ul>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="budgeting.html">Budgeting</a></li>
+                <li><a href="investing.html">Investing</a></li>
+                <li><a href="index.html">TBD topic</a></li>
+            </ul>
+        </div>
     </header>
 
-    <main class="main-content">
-        <div class="output">
-            <div class="intro-content"><span>Income</span>
-                <p id="income-earned"></p>
-            </div>
-            <div class="intro-content"><span>Expanses</span>
-                <p id="spent-money"></p>
-            </div>
-            <div class="intro-content"><span>Under Budget</span>
-                <p id="debt"></p>
-            </div>
-        </div>
+    <div>
+        <h2 id="calc-title">Budgeting Calculator</h2>
+    </div>
 
-        <div>
-            <h3 id="heading-title">Monthly Expanses</h2>
-        </div>
+    <main class="main-content">
+    
+
+        
         <!--Obtaining the input for calcultion-->
 
         <form class="budget-input" id="calculator">
+            <h3 id="heading-title">Monthly Expanses</h2>
             <div>
             <label for="pay-check">Income :</label>
             <input type="number" id="pay-check" class="amount" required>
@@ -71,6 +71,18 @@
             <button class="btn" onclick="getIncome(event);">Calculate</button>
             </div>
         </form>
+
+        <div class="output">
+            <div class="intro-content"><span>Income</span>
+                <p id="income-earned"></p>
+            </div>
+            <div class="intro-content"><span>Expanses</span>
+                <p id="spent-money"></p>
+            </div>
+            <div class="intro-content"><span>Under Budget</span>
+                <p id="debt"></p>
+            </div>
+        </div>
    
     </main>
 
