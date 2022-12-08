@@ -76,7 +76,7 @@ h1 {
     font-size: 4.5em;
 }
 
-button {
+#button {
     background-color: transparent;
     font-family: Noto Sans JP;
     font-weight: bold;
@@ -87,7 +87,7 @@ button {
     text-align: center;
 }
 
-button:hover {
+#button:hover {
     background-color: #846851;
     color: white;
 }
