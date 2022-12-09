@@ -8,7 +8,6 @@ html {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-    
 }
 
 /* Body */
@@ -24,6 +23,7 @@ body {
     box-sizing: border-box;
     padding:0 5%;
     align-items: flex-start;
+    font-family: Noto Sans JP;
 }
 main>h1 {
     width: 100%;
@@ -185,7 +185,7 @@ form.budget-input{
     
 }
 #calc-title{
-    font-family: Sacramento, normal;
+    font-family: Noto Sans JP, normal;
     padding:30px;
     text-decoration:solid;
     font-size: xx-large;
