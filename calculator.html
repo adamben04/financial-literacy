@@ -80,7 +80,7 @@
             <div class="intro-content"><span>Expenses</span>
                 <p id="spent-money"></p>
             </div>
-            <div class="intro-content"><span>Under Budget</span>
+            <div class="intro-content"><span>Over Budget</span>
                 <p id="debt"></p>
             </div>
         </div>
@@ -105,9 +105,9 @@
             document.querySelector('#spent-money').innerHTML = sumOfExpanses;
         
             
-            var underBudget = income - sumOfExpanses;
+            var overBudget = income - sumOfExpanses;
             if (sumOfExpanses > income) {
-                document.querySelector('#debt').innerHTML = Math.abs(underBudget);
+                document.querySelector('#debt').innerHTML = Math.abs(overBudget);
             } else {
                 document.querySelector('#debt').innerHTML = 0;
             }
