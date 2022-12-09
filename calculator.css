@@ -2,7 +2,7 @@
 
 /* Background image*/
 html {
-    background: url(./Images/calculatorImage.jpg);
+    background: url(./Images/calculator.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,13 +73,13 @@ h1 {
 }
 
 button {
-    background-color: whitesmoke;
+    background-color: transparent;
     font-family: Noto Sans JP;
     font-weight: bold;
     font-size: 1.5em;
-    color: #788f08;
+    color: #846851;
     padding: 15px 32px;
-    border: #95a85b solid 3.5px;
+    border: #846851 solid 3.5px;
     text-align: center;
     float:right;
     margin-bottom: 10px;
