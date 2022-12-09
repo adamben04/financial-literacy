@@ -129,8 +129,8 @@ form#calculator {
 }
 .output{
     font-size: x-large;
-    background-color: rgb(189, 195, 182);
-    opacity: .9;
+    background-color: #d2c2b5;
+    opacity: .8;
     border:inset;
     padding: 30px;
     border-radius: 3%;
