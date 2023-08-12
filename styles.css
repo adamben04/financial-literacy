@@ -110,7 +110,7 @@ footer p {
 body {
 	background: linear-gradient(-45deg, #218d69, #8a2dc0, #1b7bca, #16e766);
 	background-size: 400% 400%;
-	animation: gradient 25s ease infinite;
+	animation: gradient 15s ease infinite;
 	height: auto;   
 }
 
