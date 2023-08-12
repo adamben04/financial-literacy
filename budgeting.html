@@ -12,22 +12,19 @@
 
 <style>
     html{
-        background-image: none; 
-        background-color:#E5DCD4;
+        /* background-image: none; 
+        background-color:#aeb668; */
     }
 
     h1{
         text-align: center;
+        color: white;
     }
     img,main{
         display: flex;
         justify-content: center;
-        
-    
-
-
-        padding: 0px 100px;
-        margin-bottom: 20px;
+        /* padding: 0px 100px; */
+        margin: 20px 0;
         height: auto;
     }
 
@@ -35,10 +32,9 @@
         width: 800px;
         height:500px;
         
-
         display: block;
         margin-left: auto;
-         margin-right: auto;
+        margin-right: auto;
         width: 50%;
     }
 
@@ -46,13 +42,15 @@
         padding: 0px;
     }
     h4, p{
-        background-color: #d2c2b5;
+        background:rgb(0, 0, 0, 0.5);
         border-radius: 15px; 
         padding: 10px;
+        color: aliceblue;
+        line-height: 1.8;
     }
     h4{
         padding: 10px;
-        margin: 0 250px 50px;
+        margin: 20px 350px 50px;
     }
 
     p:not(footer p){
@@ -63,20 +61,33 @@
 
     li{
         list-style: none;
+        color: white;
+        display: flex;
+        justify-content: center;
     }
 
     main li{
         font-size: 25px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
     footer{
         text-align: center;
         margin: 0px;
     }
 
-    .hero{
+    .hero, h2{
         font-family: Noto Sans JP;
     }
+
     
+    h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px 0;
+    }
     
 </style>
 <body>
@@ -106,23 +117,30 @@
         <h1>Budgeting</h1>
     </div>
 
-
+    <div>
+        <h4>
+            We are often reminded of the necessity of budgeting in our daily lives, and for good reason. Both in the short and long terms, 
+            the significant advantages greatly surpass the time commitment. Budgeting is more crucial than ever in the current economic environment 
+            to guarantee that you and your family are working efficiently toward your financial or lifestyle objectives. Here are some tips that you 
+            can implement in your life to ensure a stable and secure financial future.
+        </h4>
+    </div>
 
     <!-- Main Info Section -->
     <main>
-
-        <div>
+       
+        <!-- <div>
         <h4>
             We are often reminded of the necessity of budgeting in our daily lives, and for good reason. Both in the short and long terms, 
             the significant advantages greatly surpass the time commitment. Budgeting is more crucial than ever in the current economic environment 
             to guarantee that you and your family are working efficiently toward your financial or lifestyle objectives. Here are some tips that you 
             can implement in your life to 
         </h4>
-        </div>
+        </div> -->
         <ol>
             <div>
             <li>
-                1. Plan a Monthly Budget
+                Plan a Monthly Budget
             </li>
             <img src="./Images/budgeting-with-computer.jpg" alt="">
             <p>
@@ -147,7 +165,7 @@
             </div>
             <div>
             <li>
-                2. Differentiate Between Needs and Wants
+                Differentiate Between Needs and Wants
             </li>
             <img src="./Images/wallet_with_money.jpg" alt="">
             <p>
@@ -159,7 +177,7 @@
             </div>
             <div>
             <li>
-                3. Underestimate Your Income and Overestimate Your Expenses
+                Underestimate Your Income and Overestimate Your Expenses
             </li>
             <img src="./Images/computer_with_charts.jpg" alt="">
             <p>
@@ -178,7 +196,7 @@
             </div>
             <div>
             <li>
-                4. Use Your Budget to Pay Off Debt Faster
+                Use Your Budget to Pay Off Debt Faster
             </li>
             <img src="./Images/paper_with_pen.jpg" alt="">
             <p>
@@ -205,8 +223,8 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <p>Site by Adam, Chaker, Winnie <br> Made for Computing for All Group Project</p>
-    </footer>
+    </footer> -->
 </body>
 </html>

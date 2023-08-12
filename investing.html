@@ -12,19 +12,20 @@
 
 <style>
     html{
-        background-image: none; 
-        background-color:#E5DCD4;
+        /* background-image: none; 
+        background-color:#E5DCD4; */
     }
 
     h1{
         text-align: center;
+        color: white;
     }
     img,main{
         display: flex;
         justify-content: center;
         
-        padding: 0px 100px;
-        margin-bottom: 20px;
+        /* padding: 0px 100px; */
+        margin: 20px 0;
         height: auto;
     }
 
@@ -42,13 +43,15 @@
         padding: 0px;
     }
     h4, p{
-        background-color: #d2c2b5;
+        background:rgb(0, 0, 0, 0.5);
         border-radius: 15px; 
         padding: 10px;
+        color: aliceblue;
+        line-height: 1.8;
     }
     h4{
         padding: 10px;
-        margin: 0 250px 50px;
+        margin: 20px 350px 50px;
     }
 
     p:not(footer p){
@@ -59,18 +62,31 @@
 
     li{
         list-style: none;
+        color: white;
+        display: flex;
+        justify-content: center;
     }
 
     main li{
         font-size: 25px;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
     footer{
         text-align: center;
         margin: 0px;
     }
 
-    .hero{
+    .hero, h2{
         font-family: Noto Sans JP;
+    }
+
+    h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px 0;
     }
     
 </style>
@@ -101,12 +117,7 @@
         <h1>Investing</h1>
     </div>
 
-
-
-    <!-- Main Info Section -->
-    <main>
-
-        <div>
+    <div>
         <h4>
             Why invest? Because it's a great way to make passive income meaning that it is income that requires little effort to maintain. 
             Investing, in other words, can help you advance in life. It may play a significant role in assisting you to increase your value 
@@ -115,23 +126,37 @@
             numerous unfamiliar terminology and ideas, and numerous pieces of challenging, even contradictory advice to sort through. In addition, it might be 
             stressful because it involves risking your money. So, I'd like to share some tips for investing that I hope you can gain some value from.
         </h4>
-        </div>
+    </div>
+
+    <!-- Main Info Section -->
+    <main>
+
+        <!-- <div>
+        <h4>
+            Why invest? Because it's a great way to make passive income meaning that it is income that requires little effort to maintain. 
+            Investing, in other words, can help you advance in life. It may play a significant role in assisting you to increase your value 
+            over time and secure the kind of future you want for your family and yourself. You might be able to make money while you sleep thanks to it. 
+            Determining how everything functions will therefore be worthwhile, without a doubt. In contrast, it's a lot when you're new. There are several options, 
+            numerous unfamiliar terminology and ideas, and numerous pieces of challenging, even contradictory advice to sort through. In addition, it might be 
+            stressful because it involves risking your money. So, I'd like to share some tips for investing that I hope you can gain some value from.
+        </h4>
+        </div> -->
         <ol>
             <div>
             <li>
-                1. Start Investing ASAP 
+                Start Investing ASAP 
             </li>
             <img src="./Images/money_grow_interest_save.jpg" alt="money ">
             <p>
                 The biggest misconception about investing is that it’s reserved for the rich. That might’ve been true in the past. But that barrier 
                 to entry is gone today, knocked down by companies and services that have made it their mission to make investment options available 
-                for everyone, including beginners and those who have just small am ounts of money to put to work. Acorns is a tool that will help you 
+                for everyone, including beginners and those who have just small amounts of money to put to work. Acorns is a tool that will help you 
                 make the most of your spare change by allowing you to invest slowly over time. Click <a href="https://www.acorns.com/" style="color:navy"> here</a> to learn more.
             </p>
             </div>
             <div>
             <li>
-                2.  Be Aware of High-Risk Investments 
+                Be Aware of High-Risk Investments 
             </li>
             <img src="./Images/cryptoImage.jpg" alt="">
             <p>
@@ -171,8 +196,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <p>Site by Adam, Chaker, Winnie <br> Made for Computing for All Group Project</p>
-    </footer>
+    </footer> -->
 </body>
 </html>
