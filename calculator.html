@@ -15,7 +15,7 @@
     <header class="top-nav" style="clear: both">
         <!-- Home -->
         <div id="home" style="float: left">
-            <a href="index.html">acw project</a>
+            <a href="index.html">ACW College Finance</a>
         </div>
 
         <!-- Other links -->
@@ -73,22 +73,38 @@
             <button class="btn" onclick="getIncome(event);">Calculate</button>
             </div>
         </form>
+        <section id="outputs">
+            <div class="output">
+                <div class="intro-content"><span>Income</span>
+                    <p id="income-earned"></p>
+                </div>
+                <div class="intro-content"><span>Expenses</span>
+                    <p id="spent-money"></p>
+                </div>
+                <div class="intro-content"><span>Over Budget</span>
+                    <p id="debt"></p>
+                </div>
 
-        <div class="output">
-            <div class="intro-content"><span>Income</span>
-                <p id="income-earned"></p>
             </div>
-            <div class="intro-content"><span>Expenses</span>
-                <p id="spent-money"></p>
-            </div>
-            <div class="intro-content"><span>Over Budget</span>
-                <p id="debt"></p>
-            </div>
-        </div>
-   
+
+            <!-- <div class="output">
+                <div id="message"><span>Message</span>
+                    <p id="leftover">Hello 1 2 3</p>
+                </div >
+            </div> -->
+
+            
+
+        </section>
+
+
     </main>
 
+    <script src="index.js"></script>
+
     <script>
+        isOver = false;
+        hasStarted = false;
         function getIncome(e){
         e.preventDefault();
         var income = +document.querySelector('#pay-check').value;
@@ -104,18 +120,43 @@
 
             var sumOfExpanses = housing + utility + food + shopping + commute + entertainment;
             document.querySelector('#spent-money').innerHTML = sumOfExpanses;
-        
             
-            var overBudget = income - sumOfExpanses;
+            var overBudget = Math.abs(income - sumOfExpanses);
+
             if (sumOfExpanses > income) {
-                document.querySelector('#debt').innerHTML = Math.abs(overBudget);
+                document.querySelector('#debt').innerHTML = overBudget;
+                if(!hasStarted){
+                    const outputElement = document.createElement('div');
+                    outputElement.classList.add('output');
+                    outputElement.innerHTML = `
+                    <p id="leftover">Over Budget! You need to cut down on around $${Math.round(overBudget / 6)} per expense</p>
+                    `;
+
+                    outputs.appendChild(outputElement);
+                }else{
+                    document.querySelector('#leftover').innerHTML = `Over Budget! You need to cut down on around $${Math.round(overBudget / 6)} per expense`;
+                }
             } else {
                 document.querySelector('#debt').innerHTML = 0;
+
+                if(!hasStarted){
+                    const outputElement = document.createElement('div');
+                    outputElement.classList.add('output');
+                    outputElement.innerHTML = `
+                    <p id="leftover">You're within budget!</p>
+                    `;
+
+                    outputs.appendChild(outputElement);
+                }else{
+                    document.querySelector('#leftover').innerHTML = `You're within Budget!`;
+                }
             }
-            
+            hasStarted = true;
         }
+
+        
     </script>
 
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
 </html>

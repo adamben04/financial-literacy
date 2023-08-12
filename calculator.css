@@ -85,6 +85,7 @@ form.budget-input {
     background: rgba(255, 255, 255, 0.6);
     padding: 20px;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 .output {
@@ -96,7 +97,11 @@ form.budget-input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    width:fit-content;
+            height:fit-content;
+    margin: auto;
+    margin-top: 30px;
 }
 
 button {
@@ -127,5 +132,31 @@ h2{
     justify-content: center;
     font-size: 2em;
     color: #fff;
+    margin-top: 50px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#outputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+    margin: auto;
+    /* font-family: Noto Sans JP; */
+    /* height: 80vh; */
+}
+
+.intro-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 5%; */
+    margin: 10px;
+    /* font-family: Noto Sans JP; */
+    /* height: 80vh; */
+}
+
+div{
+    margin-top: 10px;
 }
